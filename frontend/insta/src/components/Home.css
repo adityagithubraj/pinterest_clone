@@ -1,0 +1,148 @@
+.card {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* overflow: hidden; */
+    
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #f8f8f8;
+  
+  }
+  
+  .card-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+  }
+  
+  .card-name {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .card-img img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  .cart-contant {
+    padding: 1px 15px;
+   justify-content:left;
+    text-align: left;
+    line-height: 5px;
+    border-bottom: 1px rgb(196, 192, 192) solid;
+
+  }
+  
+
+  
+  .add-comment {
+    padding: 1px 15px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .add-comment input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .add-comment button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+   }
+  
+  .comments {
+    padding: 15px;
+  }
+  
+  .comment-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .comment-item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .comment-content {
+    flex: 1;
+  }
+  
+  .comment-content p {
+    margin: 0;
+    font-size: 14px;
+  } 
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 600px) {
+    .card {
+      border-radius: 0;
+      margin: 0;
+    }
+  
+    .card-header {
+      padding: 10px;
+    }
+  
+    .card-header img {
+      width: 30px;
+      height: 30px;
+      margin-right: 8px;
+    }
+  
+    .card-name {
+      font-size: 0.9rem;
+    }
+  
+    .card-content,
+    .add-comment {
+      padding: 10px;
+    }
+  
+    .add-comment input {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .add-comment button {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .comments {
+      padding: 10px;
+    }
+  
+    .comment-item img {
+      width: 25px;
+      height: 25px;
+      margin-right: 8px;
+    }
+  
+    .comment-content p {
+      font-size: 12px;
+    }
+  }
+  

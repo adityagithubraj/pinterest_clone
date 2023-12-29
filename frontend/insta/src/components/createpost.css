@@ -1,0 +1,59 @@
+.createpost {
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .post-header h4 {
+    margin: 0;
+  }
+  
+  #post-btn {
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-div {
+    margin-bottom: 15px;
+  }
+  
+  .input-file {
+    display: none;
+  }
+  
+  .details {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-pic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  #output{
+    border: solid 1px rgb(226, 215, 215);
+    width: 60%;
+  }
+  

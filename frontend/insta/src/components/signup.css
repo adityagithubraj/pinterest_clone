@@ -1,0 +1,63 @@
+
+.signup{
+  background-color: cadetblue;
+  /* background-image: url("data:image/jpeg;base64,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"); */
+background-size: cover;
+flex:1 ;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.form-container{
+border: 1px solid black;
+background-color: rgb(240, 236, 243);
+padding:30px;
+border-radius: 1%;
+
+}
+.sin-para{
+  color: rgb(47, 34, 34);
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0px 49px 20px;
+}
+input{
+ 
+  padding: 5px;
+  margin: 3px 0px;
+  outline: none;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+#submit-btn{
+  background-color: blue;
+  color: aliceblue;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+  .sigin-logo{
+    width: 150px; 
+    height: auto; 
+    border: solid black 0px;
+
+  }
+  
+  /* Media query for smaller screens (adjust the max-width as needed) */
+  @media screen and (max-width: 600px) {
+    .form-container {
+      padding: 15px; /* Adjusted padding for smaller screens */
+    }
+  
+    .sin-para {
+      margin: 0px 5px 20px; /* Adjusted margin for smaller screens */
+    }
+  }
+  
+  /* Media query for larger screens (adjust the min-width as needed) */
+  @media screen and (min-width: 601px) {
+    .signup {
+      background-size: contain; /* Adjusted background-size for larger screens */
+    }
+  }
+  
