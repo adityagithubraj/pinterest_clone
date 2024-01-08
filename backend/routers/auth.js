@@ -1,9 +1,17 @@
 const express = require("express");
 const userRouter = express.Router();
-const bcrypt = require("bcrypt")
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const requirelogin = require("../middlewares/requirelogin")
+
 
 const { User } = require("../models/user.model");
 
+
+
+require("dotenv").config();
+
+const jwtkey = process.env.jwtkey
 
 //........signup........//
 userRouter.post("/signup", async (req, res) => {
@@ -57,7 +65,12 @@ userRouter.post("/signin", (req, res) => {
             bcrypt.compare(password, existingUser.password)
                 .then((match) => {
                     if (match) {
-                        return res.status(200).json({ message: "Signin successful" });
+                        //return res.status(200).json({ message: "Signin successful" });
+                    
+                        const token =jwt.sign({email:email,userid:existingUser._id}, jwtkey)
+                    res.json(token)
+                    // console.log(`token :- ${token}`)
+
                     } else {
                         return res.status(422).json({ error: "Invalid password" });
                     }
@@ -73,5 +86,9 @@ userRouter.post("/signin", (req, res) => {
         });
 });
 
+
+userRouter.post("/createpost",requirelogin,(req,res)=>{
+
+})
 
 module.exports = { userRouter };

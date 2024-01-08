@@ -22,6 +22,8 @@ function Nav() {
         <li>
           <Link to="/createpost">Create-post</Link>
         </li>
+
+        
       </ul>
     </div>
   );
