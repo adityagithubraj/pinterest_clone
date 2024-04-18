@@ -1,0 +1,46 @@
+.page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px; /* Adjust as necessary */
+    background-color: #2c3e50; /* Adjust to match design */
+    color: white;
+    /* Add more styling */
+  }
+  
+  .nav-item {
+    padding: 10px;
+    /* Add more styling */
+  }
+  
+  .nav-item.active {
+    background-color: #34495e; /* Adjust to match design */
+    /* Add more styling */
+  }
+  
+  .content {
+    flex-grow: 1;
+    background-color: #ecf0f1; /* Adjust to match design */
+    /* Add more styling */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Add more styling */
+  }
+  
+  .main-content {
+    padding: 20px;
+    /* Add more styling */
+  }
+  
+  .video-preview {
+    /* Add styling for the video preview section */
+  }
+  
+  /* Add additional CSS for buttons, text, and other elements */
+  

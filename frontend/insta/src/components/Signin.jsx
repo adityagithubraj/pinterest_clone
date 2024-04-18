@@ -10,7 +10,7 @@ function Signin() {
   const navigate = useNavigate()
 
   
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = us7eState("");
   const [password, setPassword] = useState("");
 
   //.....notify toster npm 
